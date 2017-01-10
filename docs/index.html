@@ -20,13 +20,115 @@
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to UndaGit Docs.</h3>
 
 <h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Result</h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" 
+aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span>
+</a>Result</h3>
+<li><b>Screens</b> </li> 
+<p>
+<b> Home  </b> 
+  <img src="http://i64.tinypic.com/29x8brk.png" alt="Home" style="width:300;height:500;">
+<b> Search  </b> 
+  <img src="http://i63.tinypic.com/2q33kuc.png" alt="Search" style="width:300;height:500;">
+
+<b>  Repository details: </b> 
+    <img src="http://i63.tinypic.com/wqy17c.png" alt="Repository details" style="width:300;height:500;">
+
+<b>  User details </b> 
+  <img src="http://i64.tinypic.com/295et5v.png" alt="User details">
+</p>
+
 
 
 
 <h3>Task 
 </h3>
 <p>
+
+Zadatak
+
+GitHub app
+
+Potrebno je izraditi aplikaciju koja omogućava pretragu repozitorija i korisnika na GitHub servisu.
+
+GitHub ima vlastiti API čija se dokumentacija može pronaći na sljedećem linku: https://developer.github.com/v3/
+
+Popis endpoint-a u JSON formatu dostupan je ovdje: https://api.github.com/
+
+
+Aplikacija se sastoji od nekoliko ekrana čiji su zahtjevi opisani u daljnjem tekstu.
+
+
+
+Search screen
+
+Funkcionalnosti:
+
+●	Prikaz glavnog ekrana aplikacije pri samom ulasku u aplikaciju (main screen)
+
+●	Mogućnost unosa pojma za pretragu (query)
+
+●	Prikaz liste rezultata za uneseni pojam pretrage
+
+●	Mogućnost promjene sortiranja rezultata pri čemu rezultati mogu biti sortirani prema:
+
+○	Stars
+
+○	Forks
+ 
+○	Updated
+
+●	Dodatne informacije o parametrima mogu se pronaći ovdje: https://developer.github.com/v3/search/#search-repositories
+
+
+Svaki element liste (rezultat) mora biti predstavljen sa sljedećim podacima (minimalno):
+
+●	Ime repozitorija
+
+●	Ime autora
+
+●	Thumbnail slika autora
+
+●	Broj pratitelja (watchers)
+
+●	Broj fork-ova
+
+●	Broj issue-a
+
+Po želji, za svaki rezultat možeš dodati i dodatne informacije ukoliko ih smatraš praktičnim ili potrebnim.
+
+Element liste mora omogućiti navigaciju na detalje repozitorija (Repository detail screen) - npr. klikom na element liste
+
+
+Repository detail screen
+
+Funkcionalnosti:
+
+●	Prikaz detalja o jednom repozitoriju u zasebnom screenu
+
+●	Prikaz proširenog seta informacija u odnosu na informacije koje su dostupne na ekranu za pretragu. Odluči koje ćeš sve dodatne informacije prikazati na ovom ekranu. Npr. neke od korisnih informacija su:
+
+○	Ime programskog jezika
+
+○	Datum kreiranja
+
+○	Datum izmjene
+
+●	Mogućnost otvaranja (navigacije) detalja repozitorija u eksternom browseru (npr. Chrome, Firefox, Safari)
+
+●	Prikaz informacija o vlasniku (owner-u)
+ 
+Navigacija
+ 
+Bonus *
+
+Ovaj dio nije nužno rješavati!
+
+Ako se želiš iskazati i dobiti dodatne bodove možeš nam pokazati što znaš i riješiti jedan od dodatnih i zahtjevnijih zadataka.
+
+A)	Zadatk rijesi koristeci neku od popularnih arhitektura koje se koriste u razvoju Android aplikacija (hint: MVP (Model View Presenter) - http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/)
+
+B)	Napravi autorizaciju korisnika te prikaži podatke o trenutno ulogiranom korisniku. Dopušteno je dodavanje ostalih funkcionalnosti koje zahtijevaju autorizaciju po želji. Dokumentacija za OAuth dostupna je na sljedecem linku: https://developer.github.com/v3/oauth/
+
 
 </p>
 
