@@ -1,4 +1,6 @@
 
-Vsquid:S1118":Add a private constructor to hide the implicit public one.(Úßï‹8–¾Š°˜+
-Asquid:S1166"%Either log or rethrow this exception.(ª‹þð8–¾Š°˜+
-Dsquid:S1148"#Use a logger to log this exception.(’ð¯Çüÿÿÿÿ8–¾Š°˜+
+:squid:S1166"%Either log or rethrow this exception.(ª‹þð
+=squid:S1148"#Use a logger to log this exception.(’ð¯Çüÿÿÿÿ
+Dsquid:S1148"#Use a logger to log this exception.(’ð¯Çüÿÿÿÿ8ççÕ±˜+
+Asquid:S1166"%Either log or rethrow this exception.(ª‹þð8ççÕ±˜+
+Osquid:S1118":Add a private constructor to hide the implicit public one.(Úßï‹

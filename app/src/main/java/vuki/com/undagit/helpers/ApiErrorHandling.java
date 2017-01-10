@@ -15,12 +15,14 @@ public class ApiErrorHandling {
     public static void handleApiFailure( Throwable t, Context context ) {
         String errorMsg = String.format( Locale.getDefault(), "Ok Cause: %s ,message: %s , localized message: %s", t.getCause(), t.getMessage(), t.getLocalizedMessage() );
         NotesHelper.logMessage( TAG, errorMsg );
+        NotesHelper.toastMessage( context, "Api failure.Please contact Matej for further information." );
         t.printStackTrace();
     }
 
     public static void handleApiError( int code, String msg, Context context ) {
         String errorMsg = String.format( Locale.getDefault(), "Ok Cause code: %d ,message: %s ", code, msg );
         NotesHelper.logMessage( TAG, errorMsg );
+        NotesHelper.toastMessage( context, "Api error. Please contact Matej for further information." );
     }
 
 }

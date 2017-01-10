@@ -1,19 +1,7 @@
 
-c
-3app\src\main\java\vuki\com\undagit\models\User.java,b\2\b2e31cb1e369c38a46fdcd9641ae84ed9d11ccdf
-q
-Aapp\src\main\java\vuki\com\undagit\network\ApiManagerService.java,c\c\ccaf7cad0c1185fdc12dac7b9845278cca540b14
-k
-;app\src\main\java\vuki\com\undagit\models\AbstractUser.java,7\5\75bb37bbe01e51e935b10e09cdad181154e34add
-q
-Aapp\src\main\java\vuki\com\undagit\helpers\ImageLoaderHelper.java,c\c\cc7e4a80472182bb1a28b646ec32080d84b3b610
-t
-Dapp\src\main\java\vuki\com\undagit\ui\RepositoryDetailsActivity.java,9\9\99d701a29b00469b5c5c0483f3f3f1fabf017bf5
-n
->app\src\main\java\vuki\com\undagit\ui\RepositoriesAdapter.java,b\4\b4575d701c6ed44697f44974d0ccc6a43502c3d0
-l
-<app\src\main\java\vuki\com\undagit\annotations\SortType.java,5\5\55defbb5a22177960a38afd4bb059fdfa65f85c3
-n
->app\src\main\java\vuki\com\undagit\ui\UserDetailsActivity.java,3\3\3339a48d67d423542f4c5e96a8013c81f66df2c9
+p
+@app\src\main\java\vuki\com\undagit\helpers\ApiErrorHandling.java,d\1\d1456158b1dc950e503e24faedf931b4b30cf98e
 g
 7app\src\main\java\vuki\com\undagit\ui\MainActivity.java,7\4\749086f9bf6b34ae818e70ac66f0f93317f307bc
+q
+Aapp\src\main\java\vuki\com\undagit\helpers\ImageLoaderHelper.java,c\c\cc7e4a80472182bb1a28b646ec32080d84b3b610

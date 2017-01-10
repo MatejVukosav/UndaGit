@@ -22,6 +22,7 @@ import vuki.com.undagit.annotations.OrderType;
 import vuki.com.undagit.annotations.SortType;
 import vuki.com.undagit.databinding.ActivityMainBinding;
 import vuki.com.undagit.helpers.ApiErrorHandling;
+import vuki.com.undagit.helpers.ImageLoaderHelper;
 import vuki.com.undagit.models.Repository;
 import vuki.com.undagit.models.response.SearchRepositoriesResponse;
 import vuki.com.undagit.network.ApiManager;
@@ -57,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
         binding.recyclerView.addItemDecoration( dividerItemDecoration );
         binding.recyclerView.addItemDecoration( dividerItemDecoration );
 
+        ImageLoaderHelper.setGifPicture( binding.spinner, getResources().openRawResource( R.raw.gith_spinner ), this );
+
         binding.orderAsc.setTypeface( null, Typeface.BOLD );
         binding.sortByBestMatch.setTypeface( null, Typeface.BOLD );
 
@@ -83,12 +86,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onClose() {
                 repositoriesAdapter.removeAll();
+                lastQuery = "UndaGit";
+                getData( lastQuery, sortType, orderType );
                 return true;
             }
         } );
 
-        binding.searchView.setQuery( "UndaGit", false );
-        getData( "UndaGit", sortType, orderType );
+        lastQuery = "UndaGit";
+        binding.searchView.setQuery( lastQuery, true );
+        getData( lastQuery, sortType, orderType );
     }
 
     private void sertOrderListeners() {
@@ -158,11 +164,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getData( String query, @SortType String sortType, @OrderType String orderType ) {
-
+        repositoriesAdapter.removeAll();
+        binding.spinner.setVisibility( View.VISIBLE );
         Call<SearchRepositoriesResponse> searchRepositoriesResponseCall = ApiManager.getInstance().getService().searchRepositories( query, sortType, orderType );
         searchRepositoriesResponseCall.enqueue( new Callback<SearchRepositoriesResponse>() {
+
             @Override
             public void onResponse( Call<SearchRepositoriesResponse> call, Response<SearchRepositoriesResponse> response ) {
+                binding.spinner.setVisibility( View.GONE );
+
                 if( response != null ) {
                     if( response.isSuccessful() ) {
                         if( response.body() != null ) {
@@ -179,6 +189,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure( Call<SearchRepositoriesResponse> call, Throwable t ) {
+                binding.spinner.setVisibility( View.GONE );
                 ApiErrorHandling.handleApiFailure( t, MainActivity.this );
             }
         } );
