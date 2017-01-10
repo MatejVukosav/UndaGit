@@ -104,7 +104,7 @@ public class RepositoriesAdapter extends RecyclerView.Adapter<RepositoriesAdapte
         notifyDataSetChanged();
     }
 
-    public void removeAll(  ) {
+    public void removeAll() {
         data.clear();
         notifyDataSetChanged();
     }

@@ -1,11 +1,9 @@
-package vuki.com.undagit.models.response;
+package vuki.com.undagit.models;
 
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 import java.util.List;
-
-import vuki.com.undagit.models.SearchUserModel;
 
 /**
  * Created by mvukosav on 9.1.2017..

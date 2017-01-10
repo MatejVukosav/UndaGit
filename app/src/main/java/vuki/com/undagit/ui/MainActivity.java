@@ -24,7 +24,7 @@ import vuki.com.undagit.databinding.ActivityMainBinding;
 import vuki.com.undagit.helpers.ApiErrorHandling;
 import vuki.com.undagit.helpers.ImageLoaderHelper;
 import vuki.com.undagit.models.Repository;
-import vuki.com.undagit.models.response.SearchRepositoriesResponse;
+import vuki.com.undagit.models.SearchRepositoriesResponse;
 import vuki.com.undagit.network.ApiManager;
 
 /**

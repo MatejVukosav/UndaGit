@@ -9,8 +9,8 @@ import retrofit2.http.Query;
 import vuki.com.undagit.annotations.OrderType;
 import vuki.com.undagit.annotations.SortType;
 import vuki.com.undagit.models.User;
-import vuki.com.undagit.models.response.SearchRepositoriesResponse;
-import vuki.com.undagit.models.response.SearchUsersResponse;
+import vuki.com.undagit.models.SearchRepositoriesResponse;
+import vuki.com.undagit.models.SearchUsersResponse;
 
 /**
  * Created by mvukosav on 9.1.2017..
