@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "vuki.com.undagit"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "GITHUB_API_URL", '"https://api.github.com"'
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            debuggable true
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    testCompile 'junit:junit:4.12'
+
+    //Android Design Support Library
+    compile 'com.android.support:design:25.1.0'
+
+    //RETROFIT2 and OKHTTP3
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    //GSON
+    compile 'com.squareup.retrofit2:converter-gson:2.0.1'
+    //GLIDE
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+}

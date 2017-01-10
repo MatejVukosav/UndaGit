@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">UndaGit</string>
+    <string name="error_empty_response">Response is empty</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="location">Location</string>
+    <string name="number_of_repositories">Repositories</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="owner">Owner</string>
+    <string name="repository_name">Name of the repository</string>
+    <string name="created_at">Created at</string>
+    <string name="pushed_at">Pushed at</string>
+    <string name="last_update_at">Last update at</string>
+    <string name="num_of_start">Number of stars</string>
+    <string name="num_of_watchers">Number of watchers</string>
+    <string name="num_of_forks">Number of forks</string>
+    <string name="num_of_open_issues">Open issues</string>
+    <string name="num_of_public_repos">Number of public repositories</string>
+    <string name="num_of_public_gists">Number of public gists</string>
+    <string name="biography">Biography</string>
+    <string name="company">Company</string>
+</resources>

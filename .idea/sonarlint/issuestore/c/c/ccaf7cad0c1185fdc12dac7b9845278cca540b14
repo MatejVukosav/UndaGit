@@ -1,0 +1,12 @@
+
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(É‰¡¡ıÿÿÿÿ
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ıÜ×úÿÿÿÿ
+Msquid:S1213"8Move this variable to comply with Java Code Conventions.(•ÄŒÓ
+<squid:S1214""Move constants to a class or enum.(Ûàèºÿÿÿÿÿ
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(•ÄŒÓ
+Msquid:S1213"8Move this variable to comply with Java Code Conventions.(±æ ƒ
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(±æ ƒ
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(÷ïúãûÿÿÿÿ
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(şÌú²ùÿÿÿÿ
+Rsquid:S1213"8Move this variable to comply with Java Code Conventions.(şÌú²ùÿÿÿÿ
+Rsquid:S1213"8Move this variable to comply with Java Code Conventions.(ıÜ×úÿÿÿÿ
