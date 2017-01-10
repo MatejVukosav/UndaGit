@@ -35,6 +35,18 @@
                     android:layout_gravity="center"
                     tools:src="@drawable/ic_eye"/>
 
+                <Button
+                    android:id="@+id/open_in_browser_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_profile_img"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="5dp"
+                    android:text="Open in browser"
+                    android:textColor="@android:color/white"
+                />
+
 
                 <TableLayout
                     android:id="@+id/table"

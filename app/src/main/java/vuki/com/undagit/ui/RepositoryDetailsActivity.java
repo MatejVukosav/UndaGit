@@ -1,11 +1,14 @@
 package vuki.com.undagit.ui;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.databinding.DataBindingUtil;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TableRow;
 import android.widget.TextView;
 
@@ -35,12 +38,22 @@ public class RepositoryDetailsActivity extends AppCompatActivity {
             Repository repository = (Repository) b.getSerializable( "repo" );
             populateData( repository );
             binding.toolbar.setTitle( repository.getName() );
+            init( repository );
         }
         setSupportActionBar( binding.toolbar );
         final ActionBar actionBar = getSupportActionBar();
         if( actionBar != null ) {
             actionBar.setDisplayHomeAsUpEnabled( true );
         }
+    }
+
+    private void init( final Repository repository ) {
+        binding.openInBrowserBtn.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick( View view ) {
+                startActivity( new Intent( Intent.ACTION_VIEW, Uri.parse( repository.getHtml_url() ) ) );
+            }
+        } );
     }
 
     private void populateData( Repository repository ) {
@@ -55,6 +68,7 @@ public class RepositoryDetailsActivity extends AppCompatActivity {
         addDataToTable( resources.getString( R.string.num_of_start ), String.valueOf( repository.getNumOfStars() ) );
         addDataToTable( resources.getString( R.string.num_of_watchers ), String.valueOf( repository.getNumOfWatchers() ) );
         addDataToTable( resources.getString( R.string.num_of_open_issues ), String.valueOf( repository.getNumOfOpenIssues() ) );
+
     }
 
     private void addDataToTable( String key, Object object ) {
