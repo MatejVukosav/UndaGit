@@ -1,0 +1,12 @@
+{
+  "summary": {
+    "title": "Title1",
+    "owner": "Matej V",
+    "description": "neki opis"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "reviewer": "Matej"
+  }
+}
